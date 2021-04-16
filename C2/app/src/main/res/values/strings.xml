@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">C2</string>
+    <string name="btn_listar">Listar Cachorros</string>
+    <string name="btn_cadastrar">Cadastrar Cachorro</string>
+    <string name="title_cadastro">Cadastro de cachorro</string>
+    <string name="et_raca">Raça do cachorro</string>
+    <string name="et_preco">Preço médio do cachorro</string>
+    <string name="title_listar">Lista de cachorro</string>
+    <string name="tv_amigavel">Amigável:</string>
 </resources>

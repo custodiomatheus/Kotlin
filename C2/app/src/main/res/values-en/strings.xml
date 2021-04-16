@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">C2</string>
+    <string name="btn_listar">List Dogs</string>
+    <string name="btn_cadastrar">Register Dog</string>
+    <string name="title_cadastro">Dog Register</string>
+    <string name="et_raca">Dog Race</string>
+    <string name="et_preco">Dog average price</string>
+    <string name="title_listar">Dog List</string>
+    <string name="tv_amigavel">Friendly:</string>
+</resources>

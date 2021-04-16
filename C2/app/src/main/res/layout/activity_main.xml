@@ -9,10 +9,42 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="Dogs app"
+        android:textSize="30sp"
+        android:textColor="#0E228C"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="25dp"
+        android:id="@+id/tv_titulo"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_listar"
+        android:backgroundTint="#0E228C"
+        app:layout_constraintTop_toBottomOf="@id/tv_titulo"
+        android:layout_marginTop="30dp"
+        android:id="@+id/btn_listar"
+        android:onClick="listaScreen"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+z
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_cadastrar"
+        android:backgroundTint="#0E228C"
+        app:layout_constraintTop_toBottomOf="@id/btn_listar"
+        android:layout_marginTop="10dp"
+        android:id="@+id/btn_cadastrar"
+        android:onClick="cadastroScreen"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
