@@ -20,32 +20,40 @@
         android:id="@+id/tv_titulo"
         />
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
         app:layout_constraintTop_toBottomOf="@id/tv_titulo"
-        android:layout_marginTop="30dp"
-        android:id="@+id/tv_indicados"
-        />
+        android:orientation="vertical"
+        android:id="@+id/layout_dados_gerais"
+        >
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="20sp"
-        app:layout_constraintTop_toBottomOf="@id/tv_indicados"
-        android:layout_marginTop="10dp"
-        android:id="@+id/tv_nao_indicados"
-        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginTop="30dp"
+            android:id="@+id/tv_indicados"
+            />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="20sp"
-        app:layout_constraintTop_toBottomOf="@id/tv_nao_indicados"
-        android:layout_marginTop="10dp"
-        android:id="@+id/tv_total"
-        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/tv_nao_indicados"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/tv_total"
+            />
+    </LinearLayout>
 
     <ScrollView
         android:layout_width="match_parent"
@@ -53,7 +61,8 @@
         android:layout_marginTop="30dp"
         android:layout_marginLeft="25dp"
         android:layout_marginRight="25dp"
-        app:layout_constraintTop_toBottomOf="@id/tv_total">
+        android:layout_marginBottom="30dp"
+        app:layout_constraintTop_toBottomOf="@id/layout_dados_gerais">
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

@@ -25,7 +25,6 @@ class Lista : AppCompatActivity() {
                 var qtdeNaoIndicados:Int = 0
 
                 response.body()?.forEach {
-                    Toast.makeText(baseContext, "Sucesso", Toast.LENGTH_SHORT).show()
                     if(it.indicadoCriancas) {
                         qtdeIndicados++
                     } else {
@@ -34,7 +33,7 @@ class Lista : AppCompatActivity() {
 
                     val tvCachorro = TextView(baseContext)
                     tvCachorro.text = "Id: ${it.id} - Raça: ${it.raca} - " +
-                            "Preço médio: ${it.precoMedio} - Indicado: ${it.indicadoCriancas}"
+                            "Preço médio: ${it.precoMedio} - Indicado: ${if(it.indicadoCriancas) "Sim" else "Não"}"
 
                     layoutLista.addView(tvCachorro)
                 }
