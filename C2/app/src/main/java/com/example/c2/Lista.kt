@@ -42,10 +42,10 @@ class Lista : AppCompatActivity() {
                 tvIndicados.text = "Cachorros indicados para crianças: $qtdeIndicados"
 
                 var tvNaoIndicados:TextView = findViewById(R.id.tv_nao_indicados)
-                tvNaoIndicados.text = "Cachorros indicados para crianças: $qtdeNaoIndicados"
+                tvNaoIndicados.text = "Cachorros NÃO indicados para crianças: $qtdeNaoIndicados"
 
                 var tvTotal:TextView = findViewById(R.id.tv_total)
-                tvTotal.text = "Cachorros indicados para crianças: ${response.body()?.size}"
+                tvTotal.text = "Total de cachorros: ${response.body()?.size}"
 
             }
             override fun onFailure(call: Call<List<Cachorro>>, t: Throwable) {
